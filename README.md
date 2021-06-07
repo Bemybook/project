@@ -36,3 +36,46 @@ Screen 3:LOAD IMAGE FROM LIBRARY
 Screen 4 :EXTRACTED TEXT AND OUTPUTS THE VOICE 
 ![image](https://user-images.githubusercontent.com/83057352/120181690-0a78c000-c22b-11eb-9e04-46be727908b3.png)
 
+
+_________________________________________________________________________________________________________________________________________________________________________________
+
+so in this update whenever a new screen is displayed a small description of that particular screen is added.
+
+we have used cordova **speech recognition plugin** to implement **Open<BOOK NAME>** command.
+
+The Speech Recognition plugin provides many methods here:
+->isRecognizeAvailable(): Checks whether a speech recognition service is available on the system.  Result of success call back is a Boolean.
+->startListening(): Identifies and analyses the voice input given by the user. Result of success call back is an Array of recognized terms.
+->stopListening(): Stop the recognition process. No return value.
+
+-> We created a folder screen which contains all the book folder where in that folder images are saved as , for example : 1.jpeg , 2.jpeg.
+
+Fig 1: Folder Screen
+![image](https://user-images.githubusercontent.com/83057352/120987106-e40ed380-c79a-11eb-8c96-4acdaeac566d.png)
+In the above screen, we included the one dummy folder at present.
+
+We have at present given only one image in folder.
+So after we give OPEN BOOK command , our folder is opened and 1 image in it will start to read and that page which is to read is displayed on the screen.
+
+Fig 2: Image which is read
+![image](https://user-images.githubusercontent.com/83057352/120987238-099bdd00-c79b-11eb-944c-52be14d000c6.png)
+
+Fig 3: We have directed inserted image in base64 format.
+![image](https://user-images.githubusercontent.com/83057352/120987353-22a48e00-c79b-11eb-8bd0-0dd0d9b14176.png)
+
+
+We have used dap option instead of start and stop command . Later this dap option is used to invoke the bot.
+Fig 4: To display the image
+![image](https://user-images.githubusercontent.com/83057352/120987432-35b75e00-c79b-11eb-931c-9d47e2e32acb.png)
+
+Fig 5: Code which shows Dab option is implemented. 
+![image](https://user-images.githubusercontent.com/83057352/120987512-48319780-c79b-11eb-8b76-4a3808994533.png)
+
+
+
+
+
+
+
+
+
