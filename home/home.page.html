@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button fill="solid" color="secondary" (click)='logout();'>
+        Logout
+        <ion-icon slot="end" name="help-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+     Be My Book  
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" (click)='start()'>
+  <!-- <ion-button (click)='selectImage()'>
+    Take a picture
+  </ion-button>
+  <ion-list>
+    <ion-item-sliding *ngFor="let text of Text">
+      <ion-item>
+        <ion-label text-wrap>{{text}}</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="convertTextToSpeech(text)"><ion-icon name="mic-outline"></ion-icon></ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list> -->
+  <ion-row style="margin: 10%;">
+    <ion-col size='6' style="text-align: center;">
+      <img src="../../../assets/folders.png" style="height: 80px;"> <br>
+      Sample
+    </ion-col>
+  </ion-row>
+
+  <ion-row *ngIf="showImage" >
+    <ion-col style="text-align: center;">
+      <img [src]="sanitizedUrl" style="height: 300px; width: 100%;"></ion-col>
+  </ion-row>
+  
+</ion-content>

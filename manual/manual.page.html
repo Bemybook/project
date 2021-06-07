@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>manual</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" (click)='stop()'>
+ 
+  <ion-list>
+    <ion-item-sliding *ngFor="let text of Text">
+      <ion-item>
+        <ion-label text-wrap>{{text}}</ion-label>
+      </ion-item>
+     
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
