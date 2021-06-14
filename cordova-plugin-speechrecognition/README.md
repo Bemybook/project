@@ -18,7 +18,7 @@ cordova plugin add cordova-plugin-speechrecognition
 - Android
 - iOS
 
-## Usage
+## Usage is this possible
 
 This plugin requires internet connection.
 
