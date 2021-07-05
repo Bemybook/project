@@ -1,0 +1,24 @@
+CodeVisionAVR C Compiler V1.24.8d Professional
+(C) Copyright 1998-2006 Pavel Haiduc, HP InfoTech s.r.l.
+http://www.hpinfotech.com
+
+File: C:\page_turn\page.c
+Global variables memory map:
+
+Variable                          Address   Size
+i                                                                    R2,R3      2
+st                                                                    180h     12
+maths                                                                   R4      1
+science                                                                 R5      1
+start                                                                   R6      1
+st0                                                                   18Ch     13
+st2                                                                   199h     16
+rx_buffer0                                                            1A9h      8
+rx_wr_index0                                                            R7      1
+rx_rd_index0                                                            R8      1
+rx_counter0                                                             R9      1
+rx_buffer_overflow0                                               GPIOR0.0    1/8
+tx_buffer0                                                            1B1h      8
+tx_wr_index0                                                           R10      1
+tx_rd_index0                                                           R11      1
+tx_counter0                                                            R12      1
